@@ -474,4 +474,108 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.benefits {
+  padding-top: 84px;
+  padding-bottom: 119px;
+}
+
+.benefits__pre-title {
+  margin-bottom: 20px;
+  color: #303030;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.benefits__pre-title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: #303030;
+}
+
+.benefits__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits__after-title {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 193px;
+  height: 133px;
+  background-color: #F7F7F7;
+}
+
+.grid-bottom-shift {
+  position: relative;
+  top: 35px;
+}
+
+.benefits__count {
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571428571;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits__count::after {
+  content: "+";
+  position: relative;
+  top: 7px;
+  left: 2px;
+  vertical-align: top;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ff6c00;
+}
+
+.benefits__item-text {
+  width: 122px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-align: center;
+  color: #303030;
 }/*# sourceMappingURL=main.css.map */
