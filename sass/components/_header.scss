@@ -1,0 +1,25 @@
+.header {
+    @media screen and (max-width: 767px) {
+    }
+}
+
+.header__mobile--wrapped {
+    display: flex;
+    align-items: center;
+}
+.header__logo-link {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.header__logo-icon {
+    fill: $white-tc;
+}
+.menu-open {
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.header-bg {
+    background: url('/images/bg-hero.jpg');
+}

@@ -56,4 +56,422 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+.header__mobile--wrapped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-link {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.header__logo-icon {
+  fill: #ffffff;
+}
+
+.menu-open {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-bg {
+  background: url("/images/bg-hero.jpg");
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.is-hidden {
+  visibility: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-open,
+.menu-close {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open {
+  padding: 0;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+  padding-top: 48px;
+  padding-bottom: 30px;
+  padding-right: 31px;
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 80px);
+  height: calc(100% - 96px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mob-menu__nav-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu__nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.mob-menu--current {
+  color: #ff6c00;
+}
+
+.menu-container--bottom {
+  margin-bottom: 100px;
+}
+
+.mob-menu__tel {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+@media screen and (max-width: 376px) {
+  .mob-menu__tel {
+    font-size: 27px;
+  }
+}
+
+.mob-menu__booking {
+  margin-top: 24px;
+  width: 194px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.mob-menu__socials {
+  margin-top: 64px;
+}
+
+.mob-menu__social:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mob-menu__social:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu__soc-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.mob-menu__social:first-child::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: #303030;
+}
+
+.mob-menu__social:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: transparent;
+}
+
+.hero {
+  padding-top: 72.54px;
+  padding-bottom: 209px;
+}
+
+.hero__descr {
+  margin-bottom: 20px;
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero__descr::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.hero__about {
+  width: 321px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.about {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.about__section-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.about__section-title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: #303030;
+}
+
+.about__title {
+  width: 306px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.about__pre-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about__text {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8571428571;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about__booking {
+  width: 194px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.prices {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("/images/bg-services.png");
+  background-image: linear-gradient(to left, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("/images/bg-services.png");
+}
+
+.prices__pre-title {
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices__pre-title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.prices__title {
+  padding-bottom: 44px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.prices__list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px 30px 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(23, 26, 36)), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(to bottom, rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
+}
+
+.prices__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+}
+
+.prices__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.prices__item::after {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.prices__item-text {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.prices__item-price {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.prices__booking {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+  width: 194px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

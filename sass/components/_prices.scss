@@ -1,0 +1,104 @@
+.prices {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-image: linear-gradient(to left, $dark-bgc, $dark-bgc),
+                    url('/images/bg-services.png');
+}
+.prices__pre-title {
+    padding-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    text-transform: uppercase;
+    color: $lightgrey-tc;
+}
+.prices__pre-title::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+
+    background: $lightgrey-tc;
+}
+.prices__title {
+    padding-bottom: 44px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(47/40);
+    letter-spacing: 0.05em;
+    color: $white-tc;
+}
+.prices__list-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px 30px 40px;
+    
+    background-image: linear-gradient(to bottom, rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+}
+.prices__list {
+}
+.prices__item {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+.prices__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.prices__item::after {
+    order: 1;
+    flex-grow: 1;
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    order: 0;
+    
+    background: rgba(157, 164, 189, 0.12);
+}
+.prices__item-text {
+    order: 0;
+    margin-right: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20/14);
+    letter-spacing: 0.02em;
+    color: $darkgrey-tc;
+}
+.prices__item-price {
+    order: 2;
+    margin-left: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20/14);
+    letter-spacing: 0.02em;
+    color: $darkgrey-tc;
+}
+.prices__booking {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+
+    width: 194px;
+    height: 40px;
+
+    background-color: transparent;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $white-tc;
+}

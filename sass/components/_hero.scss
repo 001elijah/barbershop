@@ -1,0 +1,46 @@
+.hero {
+    padding-top: 72.54px;
+    padding-bottom: 209px;
+}
+.hero__descr {
+    margin-bottom: 20px;
+
+    color: $lightgrey-tc;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.hero__descr::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+
+    background: $lightgrey-tc;
+}
+.hero__title {
+    margin-bottom: 20px;
+    
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(56/48);
+    letter-spacing: 0.05em;
+    
+    color: $white-tc;
+}
+.hero__about {
+    width: 321px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26/16);
+    
+    letter-spacing: 0.02em;
+    
+    color: $darkgrey-tc;
+}
